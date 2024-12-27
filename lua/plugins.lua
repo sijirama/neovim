@@ -27,7 +27,6 @@ require('lazy').setup({
   --    This is the easiest way to modularize your config.
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
   { import = 'custom.plugins' },
-  --{ import = 'kickstart.plugins' },
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
