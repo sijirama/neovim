@@ -17,6 +17,7 @@ return {
                     max_width = { 80, 0.2 },
                     width = nil,
                     min_width = 60,
+                    resize_to_content = true,
                },
           }
      end,
