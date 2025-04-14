@@ -35,7 +35,7 @@ map('n', '<leader>fe', ':NvimTreeFocus<CR>', opts)
 map('n', '<leader>ef', ':NvimTreeCollapse<CR>', opts)
 
 --toggle terminal
-vim.keymap.set('n', '<leader>t', ':ToggleTerm direction=float dir=. <CR>', opts)
+vim.keymap.set('n', '<leader>t', ':ToggleTerm direction=horizontal dir=. <CR>', opts)
 
 --toggle navbuddy
 local navbuddy = require 'nvim-navbuddy'
@@ -55,12 +55,7 @@ end
 --NOTE: format code
 vim.api.nvim_set_keymap('n', '<Leader>f', '<cmd>lua vim.lsp.buf.format()<CR>', { noremap = true, silent = true })
 
--- [[ Basic Autocommands ]]
---  See `:help lua-guide-autocommands`
-
 -- Highlight when yanking (copying) text
---  Try it with `yap` in normal mode
---  See `:help vim.highlight.on_yank()`
 vim.api.nvim_create_autocmd('TextYankPost', {
      desc = 'Highlight when yanking (copying) text',
      group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
