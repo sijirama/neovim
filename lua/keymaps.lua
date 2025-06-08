@@ -29,8 +29,9 @@ vim.api.nvim_set_keymap('n', '<A-Left>', ':lua vim.diagnostic.goto_prev()<CR>', 
 vim.api.nvim_set_keymap('n', '<A-Down>', ':cnext<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<A-Up>', ':cprev<CR>', { noremap = true, silent = true })
 
---nvim tree stuff
+-- tree stuff
 map('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
+map('n', '<leader>ee', ':Neotree filesystem focus float<CR>', opts)
 map('n', '<leader>fe', ':NvimTreeFocus<CR>', opts)
 map('n', '<leader>ef', ':NvimTreeCollapse<CR>', opts)
 
