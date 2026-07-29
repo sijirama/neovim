@@ -78,6 +78,7 @@ return {
           --  Generally you don't need this, because nvim-cmp will display
           --  completions whenever it has completion options available.
           ['<C-Space>'] = cmp.mapping.complete {},
+          ['<A-a>'] = require('minuet').make_cmp_map(),
 
           -- Think of <c-l> as moving to the right of your snippet expansion.
           --  So if you have a snippet that's like:
@@ -108,6 +109,7 @@ return {
             group_index = 0,
           },
           { name = 'nvim_lsp' },
+          { name = 'minuet' },
           { name = 'luasnip' },
           { name = 'path' },
         },

@@ -2,5 +2,7 @@ tags
 test.sh
 .luarc.json
 nvim
+.env
+.env.*
 
 spell/
