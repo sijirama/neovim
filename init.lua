@@ -14,3 +14,15 @@ require 'plugins'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+
+-- dev plugins
+-- package.path = package.path .. ';/home/sijirama/Desktop/me/coder/sweep.nvim/lua/?.lua'
+-- package.path = package.path .. ';/home/sijirama/Desktop/me/coder/sweep.nvim/lua/?/init.lua'
+-- vim.opt.runtimepath:append '/home/sijirama/Desktop/me/coder/sweep.nvim'
+
+-- require('sweep').setup {
+--      debounce_delay = 2000,
+--      prediction_timeout = 60000,
+--      statusline = true,
+--      debug = true,
+-- }
